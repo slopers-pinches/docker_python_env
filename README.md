@@ -1,0 +1,2 @@
+# Docker Python Env Project
+The purpose of the Docker Pyton Env Project is to learn and how to set up a Python environment utilizing Docker Image and Container. A Docker containerize an application spinning up a Python environment to run Python functions without running an environment in a local machine (i.e. personal laptop/computer).  
