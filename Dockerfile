@@ -5,9 +5,9 @@ FROM python:3.10-slim-bookworm
 WORKDIR /codes
 
 # Set up and activate virtual environment
-ENV VIRTUAL_ENV "/venv"
-RUN python =m venv $VIRTUAL_ENV
-ENV PATH "$VIRTUAL_ENV/bin:$PATH"
+ENV VIRTUAL_ENV=/opt/venv
+RUN python3 -m venv $VIRTUAL_ENV
+ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
 # Copy the rest of the application code
 COPY . . 
